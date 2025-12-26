@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: 
+    linear-gradient(
+      rgba(240, 255, 240, 0.85),
+      rgba(220, 245, 220, 0.85)
+    ),
+    url("https://t3.ftcdn.net/jpg/01/79/21/34/360_F_179213490_XwLljMBYRBUY0hvnr1VhAbYTqcqcs35F.jpg");
+  background-size: cover;
+  background-position: center;
+}
