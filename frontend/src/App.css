@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* page layout */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 40px 20px;
+  background: linear-gradient(
+    rgba(0,0,0,0.25),
+    rgba(0,0,0,0.25)
+  ),
+  url("/farm-bg.jpg") center/cover no-repeat;
+}
+
+/* glass search card */
+.glass-card {
+  width: 420px;
+  padding: 30px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 20px 45px rgba(0,80,0,0.35);
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+/* heading */
+.hero {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0b4f1f;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #2f5d3a;
+}
+
+/*form */
+.center-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.center-input {
+  width: 260px;
+  height: 42px;
+  padding: 0 12px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.95);
+}
+
+.button-primary {
+  width: 260px;
+  height: 42px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(135deg,#1f8f3f,#146c2e);
+  box-shadow: 0 8px 18px rgba(0,100,0,0.35);
+}
+
+/*Result */
+.results-wrapper {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.result-card {
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(0,80,0,0.25);
+}
+
+.decision-card {
+  background: rgba(210,255,210,0.8);
+}
+
+.decision-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0b4f1f;
+}
+
+.reason-text {
+  font-size: 14px;
+}
+
+.muted {
+  font-size: 13px;
+  color: gray;
+}
+
+/* Mandi*/
+.mandi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
+  gap: 14px;
+}
+
+.mandi-card {
+  background: rgba(255,255,255,0.85);
+  padding: 14px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.mandi-card .price {
+  font-weight: bold;
+  color: #1f8f3f;
+}
